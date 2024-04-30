@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .tabs-boxed {
+        @apply rounded-full
+    }
+
+    .tabs-boxed .tab-active {
+        @apply rounded-full
+    }
+
+    .tabs-boxed .tab-active:not(.tab-disabled):not([disabled]), .tabs-boxed :is(input:checked) {
+        @apply bg-blue-800 text-slate-100
+    }
+
+    .tab {
+        @apply text-slate-100
+    }
+
+    .tabs-boxed .tab-active:not(.tab-disabled):not([disabled]):hover, .tabs-boxed :is(input:checked):hover {
+        @apply text-blue-200 transition duration-300 ease-in
+    }
+
+    .tab:hover {
+        @apply bg-blue-800 rounded-full transition duration-300 ease-in
+    }
+}
