@@ -26,4 +26,40 @@
     .tab:hover {
         @apply bg-blue-800 rounded-full transition duration-300 ease-in
     }
+
+    .btn-social-media {
+        @apply bg-blue-900 w-9 h-9 lg:w-12 lg:h-12 flex items-center justify-center rounded-full
+    }
+
+    .icon-social-media {
+        @apply text-slate-100 transition duration-200 hover:ease-in hover:text-blue-200 lg:text-2xl
+    }
+
+    .content-container {
+        @apply flex flex-col sm:flex-row gap-5 mb-5
+    }
+
+    .img-container {
+        @apply w-full h-48 sm:w-1/3 sm:h-40 overflow-hidden rounded-2xl shadow-lg shadow-slate-700
+    }
+
+    .img-content {
+        @apply w-full h-48 sm:h-40 object-cover transition-all duration-500
+    }
+
+    .detail-container {
+        @apply w-full sm:w-2/3
+    }
+
+    .detail-title {
+        @apply text-xl mb-2 text-slate-100
+    }
+
+    .detail-desc {
+        @apply text-sm text-slate-400 mb-3
+    }
+
+    .detail-link {
+        @apply link text-xs transition duration-200 hover:ease-in hover:text-blue-200
+    }
 }
